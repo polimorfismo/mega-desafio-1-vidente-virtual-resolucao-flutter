@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -14,7 +13,12 @@ class VidenteVirtualPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff332B25),
       appBar: AppBar(
-        title: Text('Vidente Virtual'),
+        title: Text(
+            'Vidente Virtual',
+            style: TextStyle(
+              color: Colors.white,
+            )
+        ),
         backgroundColor: Colors.brown[800],
       ),
       body: Vidente(),
@@ -28,8 +32,9 @@ class Vidente extends StatefulWidget {
 }
 
 class _VidenteState extends State<Vidente> {
-  int numeroDaImagem = 1;
 
+  int numeroDaImagem = 1;
+  
   @override
   Widget build(BuildContext context) {
     return  Center(
@@ -44,4 +49,3 @@ class _VidenteState extends State<Vidente> {
 
   }
 }
-
