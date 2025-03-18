@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +12,12 @@ class VidenteVirtualPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff332B25),
       appBar: AppBar(
-        title: Text('Vidente Virtual'),
+        title: Text(
+            'Vidente Virtual',
+            style: TextStyle(
+              color: Colors.white,
+            )
+        ),
         backgroundColor: Colors.brown[800],
       ),
       body: Vidente(),
@@ -40,4 +44,3 @@ class _VidenteState extends State<Vidente> {
 
   }
 }
-
